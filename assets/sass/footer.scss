@@ -1,0 +1,106 @@
+#footer{
+  .ft-content{
+    position: relative;
+    padding: 50px 0px;
+    color: #ffffff;
+    background-image: url('images/ft_bg_img.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .ft-content-overlay{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .inner{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      .ft-col-2{
+        width: 20%;
+      }
+      .ft-col-3{
+        width: 30%;
+      }
+      ul li{
+        padding: 6px 0;
+      }
+      a{
+        color: white;
+        &:hover{
+          color: var(--sub-color) !important;
+        }
+      }
+      .ft-contact-item{
+        margin-bottom: 15px;
+      }
+      .input-group{
+        margin-top: 20px;
+        position: relative;
+        display: table;
+        border-collapse: separate;
+        input{
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          padding: 0px 15px;
+          outline: 0px;
+          border: 0px;
+          background: #fff;
+          color: #333333;
+        }
+        .input-group-btn {
+          position: relative;
+          white-space: nowrap;
+          width: 1%;
+          padding: 0;
+          display: table-cell;
+          vertical-align: middle;
+          margin: 0;
+          button{
+            padding: 0px 30px;
+            height: 40px;
+            line-height: 40px;
+            outline: 0px;
+            border: 0px;
+            color: #fff;
+            background: #dd6334;
+            font-size: 18px;
+          }
+        }
+      }
+      .box-social{
+        a{
+          display: inline-block;
+          margin-right: 10px;
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .ft-copyrights{
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    .inner{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 12px;
+      .sub-nav{
+        a{
+          color: white;
+          text-transform: uppercase;
+          margin-right: 10px;
+          &:hover{
+            color: var(--sub-color)
+          }
+        }
+      }
+    }
+  }
+}

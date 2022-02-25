@@ -1,0 +1,25 @@
+{
+  "name": "ThimPress",
+  "version": "1.0.1",
+  "description": "A Hostel Theme",
+  "scripts": {
+    "watch": "gulp editor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://manhtk@bitbucket.org/tp-themes/royal-hotel.git"
+  },
+  "author": "Physcode",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.45.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
