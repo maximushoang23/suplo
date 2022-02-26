@@ -5,45 +5,62 @@
     margin: auto;
   }
 }
+
 @media (min-width: 768px) {
   .wrapper-container {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
-  .wrapper-container{
+  .wrapper-container {
     max-width: 960px;
   }
 }
+
 @media (min-width: 1200px) {
   .wrapper-container {
     max-width: 1140px;
   }
 }
 
-ul{
+ul {
   padding: 0;
-  li{
+
+  li {
     list-style: none;
   }
 }
-a{
+
+a {
   text-decoration: none;
 }
-body{
+
+body {
   font-family: "Noto Serif", "DejaVu Serif", serif;
-  .d-flex{
+
+  .d-flex {
     display: flex;
   }
-  .slick-slider{
-    .slick-prev, .slick-next{
+
+  p {
+    margin: 0 0 15px;
+  }
+
+  .block {
+    margin: 40px 0;
+  }
+
+  .slick-slider {
+    .slick-prev, .slick-next {
       position: absolute;
       top: 0;
       bottom: 0;
       display: flex;
       z-index: 10000;
       margin: auto;
-      i{
+
+      i {
         margin: auto;
         vertical-align: middle;
         padding: 10px;
@@ -51,11 +68,98 @@ body{
         border-radius: 50%;
       }
     }
-    .slick-prev{
+
+    .slick-prev {
       left: 10px;
     }
-    .slick-next{
+
+    .slick-next {
       right: 10px;
     }
   }
+
+  .btn-link {
+    text-align: center;
+    margin-top: 30px;
+
+    a {
+      display: inline-block;
+      padding: 10px 30px;
+      background: #dd6334;
+      color: #fff;
+    }
+  }
+
+  .h2-title {
+    text-align: center;
+    position: relative;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 3px;
+      width: 60px;
+      background: #333333;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
 }
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(72deg);
+  }
+  100% {
+    transform: rotate(-288deg);
+  }
+}
+
+@keyframes spin3 {
+  0% {
+    transform: rotate(-144deg);
+  }
+  100% {
+    transform: rotate(216deg);
+  }
+}
+
+@keyframes spin4 {
+  0% {
+    transform: rotate(216deg);
+  }
+  100% {
+    transform: rotate(-144deg);
+  }
+}
+
+@keyframes jumpUp {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+

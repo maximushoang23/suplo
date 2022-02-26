@@ -1,0 +1,17 @@
+.block-license{
+  .wrapper-container{
+    padding: 0;
+  }
+  .list-license-items{
+    .license-item{
+      padding: 15px;
+      img{
+        overflow: hidden;
+        transition: all 0.3s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

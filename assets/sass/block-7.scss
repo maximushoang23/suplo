@@ -1,0 +1,48 @@
+.block-category{
+  .wrapper-container{
+    padding: 0;
+  }
+  .article-item{
+    .article-img{
+      margin-bottom: 10px;
+      a{
+        display: block;
+        overflow: hidden;
+        img{
+          width: 100%;
+          transform: scale(1);
+          transition: all 0.3s;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .article-title{
+      margin-bottom: 5px;
+      a{
+        display: inline-block;
+        color: #333333;
+        height: 38px;
+        &:hover{
+          color: var(--primary-color)
+        }
+      }
+    }
+    .article-info{
+      margin-bottom: 5px;
+      >div{
+        display: inline-block;
+        color: #333333;
+        margin-right: 15px;
+      }
+    }
+    .article-desc{
+      color: #333333;
+      text-align: justify;
+    }
+  }
+  .slick-slide{
+    padding: 15px;
+  }
+}

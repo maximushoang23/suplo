@@ -1,0 +1,84 @@
+.block-reason{
+  .wrapper-container{
+    max-width: 1400px;
+  }
+  .content{
+    .content-left, .content-right{
+      width: 30%;
+    }
+    .policy-wrap-item{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 50px;
+      img{
+        margin-bottom: 20px;
+        width: 70px;
+      }
+      h3{
+        width: 100%;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+      }
+      span{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .animation-circle{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        transform: translateX(-50%);
+        .animation-circle-item {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s ease;
+          border: 1px solid transparent;
+          border-radius: 92% 110% 132% 88%;
+          &:nth-child(1){
+            transform-origin: 50% 50%;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: spin1;
+            border-color: #c7c7c7;
+          }
+          &:nth-child(2){
+            transform-origin: 50% 50%;
+            animation: spin2 6s linear infinite;
+            border-color: #c7c7c7;
+          }
+          &:nth-child(3){
+            transform-origin: 50% 50%;
+            animation: spin3 6s linear infinite;
+            border-color: #c7c7c7;
+          }
+          &:nth-child(4){
+            transform-origin: 50% 50%;
+            animation: spin4 6s linear infinite;
+            border-color: #c7c7c7;
+          }
+
+        }
+      }
+    }
+    .policy-wrap-center{
+      width: 40%;
+      animation: jumpUp 2s infinite linear;
+      text-align: center;
+    }
+  }
+}

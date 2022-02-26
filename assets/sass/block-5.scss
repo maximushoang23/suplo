@@ -1,0 +1,43 @@
+.block-customer-review{
+  position: relative;
+  color: #fff;
+  padding: 50px 0px;
+  text-align: center;
+  background: url('images/ha-img2_2fcf5b30560d4df09880bbc55780da71_large.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .block-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .content{
+    .h2-title:after{
+      background: white;
+    }
+    position: relative;
+    z-index: 3;
+    .customer-thumb{
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+      }
+    }
+    .customer-review-content{
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+    .customer-info{
+      text-transform: uppercase;
+    }
+
+  }
+}

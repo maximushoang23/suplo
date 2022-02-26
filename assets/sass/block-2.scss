@@ -1,0 +1,41 @@
+.block-main-post{
+  .inner-left{
+    width: 60%;
+    padding-right: 15px;
+      .list-items{
+        .item{
+          padding-left: 15px;
+          position: relative;
+          margin-bottom: 15px;
+          &::before{
+            content: '\f111';
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            font-size: 8px;
+            color: #dd6334;
+            line-height: normal;
+            font-family: 'Line Awesome Free';
+            font-weight: 900;
+          }
+          span{
+            font-weight:bold;
+          }
+        }
+      }
+  }
+  .inner-right{
+    width: 40%;
+    padding-left: 15px;
+    a{
+      display: block;
+      overflow: hidden;
+      img{
+        transition: all 0.3s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
