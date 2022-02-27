@@ -1,7 +1,10 @@
 .block-main-post{
+  .wrapper-container{
+    padding: 0;
+  }
   .inner-left{
     width: 60%;
-    padding-right: 15px;
+    padding: 15px;
       .list-items{
         .item{
           padding-left: 15px;
@@ -26,7 +29,7 @@
   }
   .inner-right{
     width: 40%;
-    padding-left: 15px;
+    padding: 15px;
     a{
       display: block;
       overflow: hidden;

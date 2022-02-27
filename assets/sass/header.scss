@@ -3,6 +3,9 @@
     padding: 10px 0;
     .inner{
       display: flex;
+      >div{
+        margin: auto;
+      }
       .box-social{
         width: 40%;
         text-align: left;
@@ -32,6 +35,13 @@
       .box-logo{
         width: 20%;
         text-align: center;
+        display: flex;
+        a{
+          display: flex;
+        }
+        img{
+          margin: auto;
+        }
       }
       .box-contact-shop{
         width: 40%;

@@ -1,4 +1,7 @@
 #footer{
+  .wrapper-container{
+    padding: 0;
+  }
   .ft-content{
     position: relative;
     padding: 50px 0px;
@@ -20,6 +23,10 @@
       position: relative;
       z-index: 2;
       display: flex;
+      flex-wrap: wrap;
+      >div{
+        padding: 15px;
+      }
       .ft-col-2{
         width: 20%;
       }

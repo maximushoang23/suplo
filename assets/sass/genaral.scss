@@ -1,7 +1,9 @@
+.wrapper-container{
+  padding: 0 15px;
+}
 @media (min-width: 576px) {
   .wrapper-container {
     max-width: 540px;
-    padding: 0 15px;
     margin: auto;
   }
 }
@@ -36,11 +38,15 @@ a {
   text-decoration: none;
 }
 
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Noto Serif", "DejaVu Serif", serif;
 
   .d-flex {
     display: flex;
+    flex-wrap: wrap;
   }
 
   p {
@@ -48,7 +54,7 @@ body {
   }
 
   .block {
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .slick-slider {
@@ -57,7 +63,7 @@ body {
       top: 0;
       bottom: 0;
       display: flex;
-      z-index: 10000;
+      z-index: 2;
       margin: auto;
 
       i {
@@ -70,11 +76,11 @@ body {
     }
 
     .slick-prev {
-      left: 10px;
+      left: 25px;
     }
 
     .slick-next {
-      right: 10px;
+      right: 25px;
     }
   }
 
@@ -163,3 +169,95 @@ body {
   }
 }
 
+.box-modal{
+  display: none;
+  .modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.6);
+  }
+  .modal-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 300px;
+    background-color: var(--primary-color);
+    padding: 30px 15px;
+    z-index: 500000;
+    overflow-y: auto;
+  }
+  &.d-block{
+    display: block!important;
+  }
+}
+.mobile-menu-title{
+  position: relative;
+  color: white;
+  i{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+}
+#primary-menu-mobile{
+  li{
+     a{
+       text-transform: uppercase;
+     }
+  }
+  li{
+    display: block;
+    padding: 6px 15px;
+    background: rgba(194, 83, 39, 0);
+    border-left: 3px solid transparent;
+    >a{
+      display: inline-block;
+      position: relative;
+      padding: 0px;
+      color: #ffffff;
+    }
+    &:hover{
+      background: #c25327;
+      border-left: 3px solid #e4b549;
+    }
+  }
+  li.menu-item-has-children{
+    position: relative;
+    &:after{
+      content: '\f067';
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      color: white;
+      position: absolute;
+      top: 4px;
+      right: 0;
+    }
+  }
+  >li.menu-item-has-children{
+    >ul.sub-menu{
+      display: none;
+      padding-top: 10px;
+      padding-left: 15px;
+      >li.menu-item-has-children{
+        >ul.sub-menu{
+          padding-left: 20px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .mega-menu .inner-sub-menu a{
+    color: white;
+    padding: 6px 0;
+    display: inline-block;
+  }
+}

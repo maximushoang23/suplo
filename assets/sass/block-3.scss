@@ -79,6 +79,11 @@
       width: 40%;
       animation: jumpUp 2s infinite linear;
       text-align: center;
+      display: flex;
+      padding: 10px;
+      img{
+        margin: auto;
+      }
     }
   }
 }
