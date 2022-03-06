@@ -1,4 +1,4 @@
-const projectURL = "http://dev.ldshopify/";
+const projectURL = "http://localhost/wp_tpv/";
 var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
@@ -23,7 +23,7 @@ gulp.task('editor-scss', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe( sourcemaps.write( './' ) )
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('assets/css'))
         .pipe( browserSync.stream() )
 });
 

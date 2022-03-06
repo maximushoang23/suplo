@@ -2,13 +2,14 @@
   .wrapper-container{
     padding: 0;
   }
-  .list-license-items{
+  .license-slider{
     .license-item{
       padding: 15px;
       width: 33.3333333333%;
       img{
         overflow: hidden;
         transition: all 0.3s;
+        width: 100%;
         &:hover{
           transform: scale(1.1);
         }

@@ -1,0 +1,119 @@
+.box-breadcrumb{
+  height: 300px;
+  padding: 30px 0;
+  background: url('../../images/ha-img2_2fcf5b30560d4df09880bbc55780da71_large.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  .breadcrumb-content{
+    margin: auto;
+    position: relative;
+    z-index: 5;
+    color: white;
+    .breadcrumbs{
+      font-weight: bold;
+      a:first-child{
+        color: var(--primary-color)
+      }
+    }
+  }
+  .breadcrumb-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+}
+.page .wrapper-container{
+  display: flex;
+  padding: 0;
+  .side-bar{
+    width: 30%;
+    padding: 15px;
+    .list-categories{
+      background: #fff;
+      box-shadow: 0 1px 7px 0 rgb(0 0 0 / 35%);
+      margin-bottom: 30px;
+      h3{
+        width: 100%;
+        display: block;
+        background: #dd6334;
+        color: #fff;
+        font-weight: normal;
+        text-align: center;
+        float: left;
+        outline: none;
+        padding: 15px;
+        margin: 0px;
+      }
+      >ul{
+        list-style: none;
+        margin: 0px;
+        padding: 15px;
+        display: grid;
+        >li{
+          margin: 0px 0px 15px 0px;
+          a{
+            color: #333333;
+            position: relative;
+            display: inline-block;
+            &:after{
+              content: '';
+              display: block;
+              border-bottom: 1px solid #dd6334;
+              width: 0;
+              position: absolute;
+              left: 0;
+              transition: 1s ease;
+            }
+            &:hover:after{
+             width: 100%
+            }
+          }
+          &.active a{
+            color: var(--primary-color);
+            &:after{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .blog-sb-banner{
+      a{
+        display: block;
+        img{
+          width: 100%
+        }
+      }
+    }
+  }
+  .main-content{
+    width: 70%;
+    padding: 15px;
+    ul.list-posts{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+        padding: 15px;
+      }
+    }
+    .nguon-tags a{
+      display: inline-block;
+      padding: 5px;
+      margin: 3px 3px 3px 0px;
+      border: 1px dashed #333333;
+      color: #333333;
+      &:hover{
+        color: var(--primary-color)
+      }
+    }
+  }
+}

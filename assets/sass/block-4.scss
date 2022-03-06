@@ -9,13 +9,19 @@
         padding: 15px;
         h3{
           text-align: center;
-        }
-        img{
-          width: 100%;
-          max-height: 300px;
-          object-fit: unset;
+          a{
+            color: black;
+          }
         }
       }
     }
+  }
+}
+.block-feature-product .slider-item, .block-license .license-item {
+  height: 450px;
+  .item-thumb, img{
+    height: 100%!important;
+    max-height: unset;
+    margin: auto;
   }
 }

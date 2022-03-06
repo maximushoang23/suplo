@@ -10,8 +10,10 @@
         width: 40%;
         text-align: left;
         margin: auto 0;
+        display: flex;
+        flex-wrap: wrap;
         a{
-          display: inline-block;
+          display: flex;
           height: 34px;
           line-height: 34px;
           width: 34px;
@@ -29,6 +31,7 @@
           i{
             font-size: 24px;
             vertical-align: middle;
+            margin: auto;
           }
         }
       }
@@ -53,6 +56,9 @@
         a{
           color: var(--primary-color);
           text-decoration: none;
+        }
+        >div{
+          padding: 3px 0;
         }
       }
       .icon-show-menu-mobile{
@@ -123,6 +129,7 @@
           &:hover{
             >.sub-menu{
               display: block;
+              z-index: 10;
             }
           }
           >.sub-menu{

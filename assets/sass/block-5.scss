@@ -3,7 +3,7 @@
   color: #fff;
   padding: 50px 0px;
   text-align: center;
-  background: url('images/ha-img2_2fcf5b30560d4df09880bbc55780da71_large.jpg');
+  background: url('../../images/ha-img2_2fcf5b30560d4df09880bbc55780da71_large.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,9 +34,13 @@
     .customer-review-content{
       max-width: 500px;
       margin: 0 auto 20px;
+      font-family: "Noto Serif", "DejaVu Serif", serif;
+      line-height: 24px;
     }
     .customer-info{
       text-transform: uppercase;
+      font-family: "Noto Serif", "DejaVu Serif", serif;
+      font-weight: bold;
     }
 
   }
