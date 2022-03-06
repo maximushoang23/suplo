@@ -43,6 +43,13 @@
     margin-right: 0;
     width: 30%;
   }
+  .page-single-product .main-content .product-slider .inner .inner-left,
+  .page-single-product .main-content .product-slider .inner .inner-right{
+    width: 100%;
+  }
+  .page-single-product .main-content .product-des .product-description-wrapper .product-main-info{
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .ft-copyrights .inner .sub-nav{

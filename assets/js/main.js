@@ -74,7 +74,8 @@ $('.product-slider-main').slick({
     swipeToSlide: true,
     cssEase: 'linear',
     centerPadding: 0,
-    arrows: true,
+    arrows: false,
+    adaptiveHeight: false,
     prevArrow: '<div class="slick-prev"><i class="las la-angle-left"></i></div>',
     nextArrow: '<div class="slick-next"><i class="las la-angle-right"></i></div>',
 });
@@ -91,6 +92,7 @@ $('.product-slider-gallery').slick({
     cssEase: 'linear',
     centerPadding: 0,
     arrows: true,
+    adaptiveHeight: false,
     prevArrow: '<div class="slick-prev"><i class="las la-angle-left"></i></div>',
     nextArrow: '<div class="slick-next"><i class="las la-angle-right"></i></div>',
 });
