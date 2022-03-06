@@ -47,8 +47,12 @@
   .page-single-product .main-content .product-slider .inner .inner-right{
     width: 100%;
   }
-  .page-single-product .main-content .product-des .product-description-wrapper .product-main-info{
+  .page-single-product .main-content .product-des .product-description-wrapper .product-main-info,
+  .page .wrapper-container .side-bar{
     display: none;
+  }
+  .page .wrapper-container .main-content{
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -88,5 +92,8 @@
   }
   #footer .wrapper-container{
     padding: 0 15px;
+  }
+  .page .wrapper-container .main-content ul.list-posts li{
+    width: 100%;
   }
 }

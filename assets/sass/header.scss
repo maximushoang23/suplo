@@ -76,7 +76,7 @@
         flex-wrap: wrap;
         margin: 0;
         li{
-          margin-right: 30px;
+          margin-right: 20px;
           padding: 15px 0;
           a{
             color: white;
@@ -214,6 +214,20 @@
         a i{
           color: white;
           font-size: 24px;
+        }
+      }
+      .inner-right{
+        padding-right: 30px;
+        position: relative;
+        .cart-icon{
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          a{
+            margin: auto;
+          }
         }
       }
     }

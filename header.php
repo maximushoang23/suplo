@@ -84,122 +84,25 @@
                         'menu_id' => 'primary-menu'
                     ) );
                     ?>
-<!--                    <ul id="primary-menu" class="navbar-main-menu">-->
-<!--                        <li class="menu-item menu-item-type-custom current-menu-item">-->
-<!--                            <a href="">-->
-<!--                                Trang chủ-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom menu-item-has-children">-->
-<!--                            <a href="">-->
-<!--                                Sản phẩm-->
-<!--                            </a>-->
-<!--                            <ul class="sub-menu">-->
-<!--                                <li class="menu-item menu-item-type-custom menu-item-has-children">-->
-<!--                                    <a href="">-->
-<!--                                        Thực phẩm chức năng-->
-<!--                                    </a>-->
-<!--                                    <ul class="sub-menu">-->
-<!--                                        <li class="menu-item menu-item-type-custom">-->
-<!--                                            <a href="">-->
-<!--                                                Xuất xứ Hoa Kì-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        <li class="menu-item menu-item-type-custom">-->
-<!--                                            <a href="">-->
-<!--                                                Xuất xứ Nhật Bản-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                        <li class="menu-item menu-item-type-custom">-->
-<!--                                            <a href="">-->
-<!--                                                Xuất xứ Việt Nam-->
-<!--                                            </a>-->
-<!--                                        </li>-->
-<!--                                    </ul>-->
-<!--                                </li>-->
-<!--                                <li class="menu-item menu-item-type-custom">-->
-<!--                                    <a href="">-->
-<!--                                        Thuốc Đông Y-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                                <li class="menu-item menu-item-type-custom">-->
-<!--                                    <a href="">-->
-<!--                                        Thuốc Tây Y-->
-<!--                                    </a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom">-->
-<!--                            <a href="">-->
-<!--                                Tin tức-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom">-->
-<!--                            <a href="">-->
-<!--                                Liên hệ-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom">-->
-<!--                            <a href="">-->
-<!--                                Hệ thống cửa hàng-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom menu-item-has-children">-->
-<!--                            <a href="">-->
-<!--                                Chăm sóc khách hàng-->
-<!--                            </a>-->
-<!--                            <ul class="sub-menu mega-menu">-->
-<!--                                <li class="inner-sub-menu">-->
-<!--                                    <div class="inner-item">-->
-<!--                                        <a href="">-->
-<!--                                            Tư vấn sản phẩm-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                    <div class="inner-item">-->
-<!--                                        <a href="">-->
-<!--                                            Chính sách giao hàng-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                    <div class="inner-item">-->
-<!--                                        <a href="">-->
-<!--                                            Chính sách đổi trả-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                    <div class="inner-item">-->
-<!--                                        <a href="">-->
-<!--                                            Câu hỏi thường gặp-->
-<!--                                        </a>-->
-<!--                                        <ol class="list-question">-->
-<!--                                            <li class="question-item">-->
-<!--                                                <a href="">-->
-<!--                                                    Về sản phẩm-->
-<!--                                                </a>-->
-<!--                                            </li>-->
-<!--                                            <li class="question-item">-->
-<!--                                                <a href="">-->
-<!--                                                    Về suplo-->
-<!--                                                </a>-->
-<!--                                            </li>-->
-<!--                                        </ol>-->
-<!--                                    </div>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom">-->
-<!--                            <a href="">-->
-<!--                                Tìm kiếm-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                        <li class="menu-item menu-item-type-custom">-->
-<!--                            <a href="">-->
-<!--                                Tài khoản-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-                    <div class="cart-icon">
-                        <a href="">
-                            <i class="las la-shopping-cart"></i>
-                        </a>
+                    <div class="inner-right">
+                        <div class="box-search">
+                            <button class="btn btn-search-text dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tìm kiếm
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form class="input-group" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+                                    <input  name="s" class="form-control" placeholder="Tìm kiếm sản phẩm ..." value="<?php echo get_search_query(); ?>" />
+                                    <button type="submit" class="btn btn-search" value="Search">
+                                        <i class="las la-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="">
+                                <i class="las la-shopping-cart"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

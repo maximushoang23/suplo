@@ -15,6 +15,7 @@
     color: white;
     .breadcrumbs{
       font-weight: bold;
+      text-align: center;
       a:first-child{
         color: var(--primary-color)
       }
@@ -29,6 +30,9 @@
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
   }
+}
+.page-search .wrapper-container .main-content.main-content{
+  width: 100%
 }
 .page .wrapper-container{
   display: flex;

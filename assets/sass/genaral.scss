@@ -299,3 +299,44 @@ body {
     background-color: #f7f7f7;
   }
 }
+.box-search{
+  position: relative;
+  margin: auto 30px auto 0;
+  .dropdown-toggle{
+    cursor: pointer;
+  }
+  .dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 30;
+    display: none;
+    .form-control{
+      padding: 5px 30px 5px 12px;
+      outline: none;
+    }
+    .input-group{
+      position: relative;
+      .btn-search{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+      }
+    }
+  }
+  &:hover{
+    .dropdown-menu{
+      display:block;
+    }
+  }
+}
+#dropdownSearchButton{
+  background-color: unset;
+  padding: 15px 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+}
